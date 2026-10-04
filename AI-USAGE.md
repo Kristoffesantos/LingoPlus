@@ -85,7 +85,7 @@ I kept the general idea of separating the website into these sections.
 **What I changed:**
 I changed the content and organization to fit our LingoPlus project and our target users.
 
-**Commit:** [REPOSITORY URL]/commit/65ad355
+**Commit:** https://github.com/Kristoffesantos/LingoPlus/actions/runs/36500182016
 
 ---
 
@@ -106,7 +106,7 @@ I kept some of the suggested terms and the general card-based structure.
 **What I changed:**
 I selected and edited the content that was appropriate for beginners and changed the website structure to match our project.
 
-**Commit:** [REPOSITORY URL]/commit/103e7a2
+**Commit:** https://github.com/Kristoffesantos/LingoPlus/actions/runs/36725722052
 
 ---
 
@@ -127,7 +127,7 @@ I kept the general card and grid layout.
 **What I changed:**
 I adjusted the spacing and layout because some versions had too much empty space. I also changed the styling to better match the simple black-and-white design of LingoPlus.
 
-**Commit:** [REPOSITORY URL]/commit/a63be8d
+**Commit:** https://github.com/Kristoffesantos/LingoPlus/actions/runs/36500212297
 
 ---
 
@@ -148,7 +148,7 @@ I kept the basic search and filter approach.
 **What I changed:**
 I adjusted the JavaScript to work with our actual HTML structure and added behavior for searches that have no matching results.
 
-**Commit:** [REPOSITORY URL]/commit/55ad641
+**Commit:** https://github.com/Kristoffesantos/LingoPlus/actions/runs/36725781078
 
 ---
 
@@ -169,7 +169,7 @@ I kept some of the layout improvements.
 **What I changed:**
 I tested the changes in VS Code and the browser and adjusted the CSS when the result did not look right.
 
-**Commit:** [REPOSITORY URL]/commit/0244025
+**Commit:** https://github.com/Kristoffesantos/LingoPlus/actions/runs/36725830943
 
 ---
 
@@ -190,7 +190,7 @@ I kept the useful styling and organization improvements.
 **What I changed:**
 I checked the website after the changes and kept only the rules that were useful for the current design.
 
-**Commit:** [REPOSITORY URL]/commit/617d176
+**Commit:** https://github.com/Kristoffesantos/LingoPlus/actions/runs/36726584084
 
 ---
 
@@ -211,7 +211,7 @@ I kept terms and examples that were appropriate for beginners.
 **What I changed:**
 I organized the content into the existing LingoPlus cards and removed or changed content that did not fit the website.
 
-**Commit:** [REPOSITORY URL]/commit/103e7a2
+**Commit:** https://github.com/Kristoffesantos/LingoPlus/actions/runs/36725722052
 
 ---
 
@@ -230,7 +230,7 @@ After testing the website, I noticed that there was too much empty space between
 **What I did instead:**
 I reduced the section padding, gaps, margins, and card spacing and tested the result in the browser.
 
-**Commit:** [REPOSITORY URL]/commit/0244025
+**Commit:** https://github.com/Kristoffesantos/LingoPlus/actions/runs/36725830943
 
 ---
 
@@ -247,7 +247,7 @@ The button did not provide a useful View More/View Less experience when the card
 **What I did instead:**
 I changed the JavaScript so that only part of the list is shown at first. View More displays the remaining cards, while View Less hides them again.
 
-**Commit:** [REPOSITORY URL]/commit/55ad641
+**Commit:** https://github.com/Kristoffesantos/LingoPlus/actions/runs/36725781078
 
 ---
 
@@ -268,7 +268,7 @@ I added a message:
 
 The message is shown when there are no matching cards and hidden again when results are found or the search is cleared.
 
-**Commit:** [REPOSITORY URL]/commit/55ad641
+**Commit:** https://github.com/Kristoffesantos/LingoPlus/actions/runs/36725781078
 
 ---
 
@@ -286,7 +286,7 @@ I worked on the structure and content of the LingoPlus webpage, including the di
 
 The HTML provides the main structure of the website. The sections are separated so users can navigate between the Home, About, Terms, Code Basics, and Contact areas.
 
-**Commit:** [REPOSITORY URL]/commit/65ad355
+**Commit:** https://github.com/Kristoffesantos/LingoPlus/actions/runs/36500182016
 
 ### Testing and Fixing
 
@@ -294,7 +294,7 @@ I tested the website in VS Code and the browser after making changes.
 
 I checked whether the navigation, search, cards, buttons, and responsive layout behaved correctly. When something did not look or work correctly, I modified the code and tested it again.
 
-**Commit:** [REPOSITORY URL]/commit/617d176
+**Commit:** https://github.com/Kristoffesantos/LingoPlus/actions/runs/36726584084
 
 ### AI-Written Part I Understand
 
@@ -304,7 +304,7 @@ The JavaScript reads the search input and compares it with the text inside each 
 
 I understand this part because I tested it in the browser and changed the behavior to fit our actual website. I also added the no-results behavior so that users receive a message when their search does not match anything.
 
-**Commit:** [REPOSITORY URL]/commit/55ad641
+**Commit:** https://github.com/Kristoffesantos/LingoPlus/actions/runs/36725781078
 
 ---
 
@@ -322,9 +322,9 @@ I also adjusted the spacing because some versions had too much empty space. I te
 
 Media queries were also used to help the website adjust to smaller screen sizes.
 
-**Commit:** [SHILONY'S ACTUAL COMMIT URL]
+**Commit:** https://github.com/Kristoffesantos/LingoPlus/actions/runs/37176391544
 
-**Additional CSS Commit:** [SHILONY'S ADDITIONAL COMMIT URL]
+**Additional CSS Commit:** https://github.com/Kristoffesantos/LingoPlus/actions/runs/37176391544
 
 ### AI-Written Part I Understand
 
@@ -334,7 +334,7 @@ The AI suggested different CSS rules for the cards, spacing, grids, and responsi
 
 I understand how the CSS controls the appearance and layout of the website because I tested the changes in the browser and adjusted them based on the result.
 
-**Commit:** [SHILONY'S ACTUAL COMMIT URL]
+**Commit:** https://github.com/Kristoffesantos/LingoPlus/actions/runs/37176391544
 
 ---
 
@@ -352,7 +352,7 @@ The search function gets the text entered by the user and compares it with the t
 
 I also worked on the behavior of the View More and View Less buttons and the message shown when there are no matching search results.
 
-**Commit:** [MARK'S ACTUAL COMMIT URL]
+**Commit:** https://github.com/Kristoffesantos/LingoPlus/actions/runs/37176366974
 
 ### AI-Written Part I Understand
 
@@ -362,7 +362,7 @@ The AI provided a basic approach for checking the user's search input against th
 
 I also helped make the search display a message when there were no matching results.
 
-**Commit:** [MARK'S ACTUAL COMMIT URL]
+**Commit:** https://github.com/Kristoffesantos/LingoPlus/actions/runs/37176366974
 
 ---
 
