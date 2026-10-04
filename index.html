@@ -1,336 +1,1264 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LingoPlus</title>
+    <title>LingoPlus - IT Dictionary</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>LingoPlus</h1>
+    <!-- ================= HEADER ================= -->
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#terms">Terms</a>
-            <a href="#code">Code Basics</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <header>
+
+        <div class="logo">
+            LingoPlus
+        </div>
+
+        <div class="header-row">
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#terms">Terms</a>
+                <a href="#code">Code Basics</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="header-buttons">
+                <button onclick="openSettings()">Settings</button>
+                <button onclick="openLogin()">Login</button>
+            </div>
+
+        </div>
+
     </header>
+
+
+    <!-- ================= HOME ================= -->
 
     <main>
 
-        <section id="home" class="hero">
-            <h2>Understand IT Terms Easily</h2>
+        <section class="hero" id="home">
+
+            <h1>Understand IT Terms Easily</h1>
 
             <p>
-                Welcome to LingoPlus, a simple digital dictionary
-                made to help beginners understand IT terms,
-                programming concepts, and common technology acronyms.
+                LingoPlus is a simple digital dictionary for students,
+                beginners, and anyone learning about Information Technology.
             </p>
 
             <p>
-                Instead of using complicated technical explanations,
-                LingoPlus explains terms using simple and easy-to-understand
-                descriptions.
+                Learn common IT terms, programming concepts, and basic code
+                examples in an easy-to-understand way.
             </p>
 
-            <button onclick="showMessage()">Learn More</button>
+            <div class="hero-buttons">
+                <a href="#terms">Explore Terms</a>
+                <a href="#code">Learn Code</a>
+            </div>
+
         </section>
+
+
+        <!-- ================= ABOUT ================= -->
 
         <section id="about">
+
             <h2>About LingoPlus</h2>
 
-            <p>
-                LingoPlus was created for students, beginners,
-                and people who are starting to learn about technology
-                and programming.
-            </p>
+            <div class="about-text">
 
-            <p>
-                The goal of LingoPlus is to make technical words
-                less confusing by providing short definitions
-                and simple examples.
-            </p>
+                <p>
+                    LingoPlus was created to make technical words easier
+                    to understand for beginners.
+                </p>
 
-            <h3>Who Can Use LingoPlus?</h3>
+                <h3>Who is it for?</h3>
 
-            <ul>
-                <li>IT and computer science students</li>
-                <li>People who are new to programming</li>
-                <li>Students learning web development</li>
-                <li>Anyone who wants to understand common IT terms</li>
-            </ul>
+                <ul>
+                    <li>IT students</li>
+                    <li>Programming beginners</li>
+                    <li>Students learning web development</li>
+                    <li>Hobbyists</li>
+                    <li>Anyone unfamiliar with IT terminology</li>
+                </ul>
 
-            <h3>Why LingoPlus?</h3>
+                <h3>Why LingoPlus?</h3>
 
-            <p>
-                Technology has many terms and acronyms that can be
-                difficult for beginners to understand. LingoPlus
-                provides a simple place where users can look up
-                these terms and learn what they mean.
-            </p>
+                <p>
+                    IT has many acronyms and technical terms that can be
+                    confusing at first. LingoPlus gives short and simple
+                    explanations so beginners can understand them faster.
+                </p>
+
+            </div>
+
         </section>
+
+
+        <!-- ================= IT TERMS ================= -->
 
         <section id="terms">
-            <h2>Search IT Terms</h2>
 
-            <p>
-                Search for an IT term to learn more about its meaning.
+            <h2>IT Terms</h2>
+
+            <p class="section-description">
+                Search and learn common IT terms, acronyms, networking terms,
+                programming concepts, and web development terms.
             </p>
 
-            <input type="text" placeholder="Search for an IT term...">
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="termSearch"
+                    placeholder="Search IT terms..."
+                >
+            </div>
 
-            <div class="cards">
+            <div class="term-grid">
 
-                <div class="card">
+
+                <!-- ===== BASIC COMPUTER TERMS ===== -->
+
+                <div class="term-card">
                     <h3>API</h3>
-                    <p>
-                        Application Programming Interface. It allows
-                        different software programs to communicate with
-                        each other.
-                    </p>
+                    <p>Allows different software programs to communicate with each other.</p>
                 </div>
 
-                <div class="card">
+                <div class="term-card">
                     <h3>RAM</h3>
-                    <p>
-                        Random Access Memory. It temporarily stores data
-                        that a computer is currently using.
-                    </p>
+                    <p>Temporary memory used by a computer while programs are running.</p>
                 </div>
 
-                <div class="card">
-                    <h3>GUI</h3>
-                    <p>
-                        Graphical User Interface. It allows users to
-                        interact with a computer using visual elements.
-                    </p>
+                <div class="term-card">
+                    <h3>ROM</h3>
+                    <p>Memory that stores data that normally remains available even when power is off.</p>
                 </div>
 
-                <div class="card">
+                <div class="term-card">
                     <h3>CPU</h3>
-                    <p>
-                        Central Processing Unit. It processes instructions
-                        and performs calculations for a computer.
-                    </p>
+                    <p>The main processor that performs instructions and calculations.</p>
                 </div>
 
-                <div class="card">
+                <div class="term-card">
                     <h3>GPU</h3>
-                    <p>
-                        Graphics Processing Unit. It processes graphics,
-                        images, and video.
-                    </p>
+                    <p>A processor designed mainly for graphics and parallel calculations.</p>
                 </div>
 
-                <div class="card">
-                    <h3>HTML</h3>
-                    <p>
-                        HyperText Markup Language. It is used to create
-                        and structure webpages.
-                    </p>
+                <div class="term-card">
+                    <h3>GUI</h3>
+                    <p>A visual interface that lets users interact with software using buttons and menus.</p>
                 </div>
 
-                <div class="card">
-                    <h3>CSS</h3>
-                    <p>
-                        Cascading Style Sheets. It controls the design,
-                        appearance, and layout of webpages.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>JavaScript</h3>
-                    <p>
-                        A programming language commonly used to add
-                        interaction and dynamic behavior to websites.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>URL</h3>
-                    <p>
-                        Uniform Resource Locator. It is the address used
-                        to access a resource on the internet.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>HTTP</h3>
-                    <p>
-                        HyperText Transfer Protocol. It is used for
-                        communication between browsers and web servers.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>HTTPS</h3>
-                    <p>
-                        HyperText Transfer Protocol Secure. It is a
-                        secure version of HTTP.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>DNS</h3>
-                    <p>
-                        Domain Name System. It translates domain names
-                        into IP addresses.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>IP Address</h3>
-                    <p>
-                        Internet Protocol Address. It identifies a device
-                        on a network.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>IDE</h3>
-                    <p>
-                        Integrated Development Environment. It provides
-                        tools for writing and developing code.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>SQL</h3>
-                    <p>
-                        Structured Query Language. It is used to work
-                        with data in databases.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>JSON</h3>
-                    <p>
-                        JavaScript Object Notation. It is a common format
-                        for storing and exchanging data.
-                    </p>
-                </div>
-
-                <div class="card">
+                <div class="term-card">
                     <h3>OS</h3>
-                    <p>
-                        Operating System. It manages computer hardware
-                        and software resources.
-                    </p>
+                    <p>Software that manages computer hardware and applications.</p>
                 </div>
 
-                <div class="card">
+                <div class="term-card">
                     <h3>SSD</h3>
-                    <p>
-                        Solid State Drive. It is a storage device used
-                        to save files and programs.
-                    </p>
+                    <p>A storage device that uses flash memory to store data.</p>
                 </div>
 
-                <div class="card">
+                <div class="term-card">
+                    <h3>HDD</h3>
+                    <p>A storage device that uses magnetic disks to store data.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>BIOS</h3>
+                    <p>Firmware that helps initialize computer hardware when a computer starts.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Hardware</h3>
+                    <p>The physical parts of a computer that you can touch.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Software</h3>
+                    <p>Programs and instructions that run on a computer.</p>
+                </div>
+
+
+                <!-- ===== WEB DEVELOPMENT ===== -->
+
+                <div class="term-card">
+                    <h3>HTML</h3>
+                    <p>The language used to structure content on web pages.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>CSS</h3>
+                    <p>Used to style and design HTML websites.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>JavaScript</h3>
+                    <p>A programming language commonly used to make websites interactive.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>URL</h3>
+                    <p>The web address used to locate a resource online.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>HTTP</h3>
+                    <p>A protocol used to transfer information between browsers and servers.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>HTTPS</h3>
+                    <p>The secure version of HTTP that encrypts communication.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>DOM</h3>
+                    <p>A representation of a web page that JavaScript can interact with.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Frontend</h3>
+                    <p>The part of a website that users see and interact with.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Backend</h3>
+                    <p>The server-side part of an application that handles data and logic.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Responsive Design</h3>
+                    <p>A design approach that allows websites to work on different screen sizes.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Browser</h3>
+                    <p>A program used to access and view websites.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Web Server</h3>
+                    <p>A server that delivers web pages and other web resources.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Website</h3>
+                    <p>A collection of related web pages available through the internet.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Web Page</h3>
+                    <p>A single document that can be viewed in a web browser.</p>
+                </div>
+
+
+                <!-- ===== NETWORKING ===== -->
+
+                <div class="term-card">
+                    <h3>DNS</h3>
+                    <p>Converts domain names into IP addresses.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>IP Address</h3>
+                    <p>A numerical address used to identify a device on a network.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>IP</h3>
+                    <p>Internet Protocol used for addressing and sending data across networks.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>TCP</h3>
+                    <p>A protocol that provides reliable delivery of data across networks.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>UDP</h3>
+                    <p>A faster network protocol that does not guarantee delivery.</p>
+                </div>
+
+                <div class="term-card">
                     <h3>LAN</h3>
-                    <p>
-                        Local Area Network. It connects devices within
-                        a limited area such as a school or home.
-                    </p>
+                    <p>A network that connects devices within a small area.</p>
                 </div>
 
-                <div class="card">
+                <div class="term-card">
+                    <h3>WAN</h3>
+                    <p>A network that covers a large geographic area.</p>
+                </div>
+
+                <div class="term-card">
                     <h3>Wi-Fi</h3>
-                    <p>
-                        A wireless technology that allows devices to
-                        connect to a network.
-                    </p>
+                    <p>Wireless technology used to connect devices to a network.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Router</h3>
+                    <p>A device that directs network traffic between different networks.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Switch</h3>
+                    <p>A networking device that connects devices within a network.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Port</h3>
+                    <p>A number used to identify a specific network service.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Bandwidth</h3>
+                    <p>The amount of data that can be transferred over a network in a given time.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Latency</h3>
+                    <p>The delay between sending and receiving data.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Upload</h3>
+                    <p>Sending data from your device to another system or server.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Download</h3>
+                    <p>Receiving data from another system onto your device.</p>
+                </div>
+
+
+                <!-- ===== DATABASE ===== -->
+
+                <div class="term-card">
+                    <h3>Database</h3>
+                    <p>An organized collection of information that can be stored and managed.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>SQL</h3>
+                    <p>A language used to work with data stored in relational databases.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>JSON</h3>
+                    <p>A common text format used to store and exchange structured data.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Table</h3>
+                    <p>A database structure made up of rows and columns.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Record</h3>
+                    <p>A single row of information in a database table.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Query</h3>
+                    <p>A request for information or an operation on stored data.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>CRUD</h3>
+                    <p>Create, Read, Update, and Delete are common database operations.</p>
+                </div>
+
+
+                <!-- ===== SECURITY ===== -->
+
+                <div class="term-card">
+                    <h3>Firewall</h3>
+                    <p>A security system that controls network traffic.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Encryption</h3>
+                    <p>Converting information into a protected form to prevent unauthorized access.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Authentication</h3>
+                    <p>The process of verifying who a user is.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Authorization</h3>
+                    <p>The process of determining what an authenticated user can access.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Malware</h3>
+                    <p>Software designed to harm, disrupt, or gain unauthorized access to systems.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Virus</h3>
+                    <p>A type of malicious program that can spread by attaching itself to files.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Phishing</h3>
+                    <p>A scam that attempts to trick people into giving away sensitive information.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Backup</h3>
+                    <p>A copy of data kept so it can be recovered if the original is lost.</p>
+                </div>
+
+
+                <!-- ===== PROGRAMMING ===== -->
+
+                <div class="term-card">
+                    <h3>Algorithm</h3>
+                    <p>A step-by-step procedure used to solve a problem.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Variable</h3>
+                    <p>A named location used to store a value in a program.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Function</h3>
+                    <p>A reusable block of code designed to perform a specific task.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Array</h3>
+                    <p>A structure that stores multiple values in a single variable.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Loop</h3>
+                    <p>A programming structure that repeats a block of code.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Condition</h3>
+                    <p>A rule that determines whether certain code should run.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Object</h3>
+                    <p>A programming structure that can store related data and behavior.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Syntax</h3>
+                    <p>The rules that determine how code must be written.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Compiler</h3>
+                    <p>A program that translates source code into another form that a computer can run.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Interpreter</h3>
+                    <p>A program that executes code by processing it during runtime.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Runtime</h3>
+                    <p>The environment where a program is executed.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Debugging</h3>
+                    <p>The process of finding and fixing problems in code.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Bug</h3>
+                    <p>An error or problem in a program.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>IDE</h3>
+                    <p>Software that provides tools for writing, testing, and debugging code.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Framework</h3>
+                    <p>A collection of tools and structures used to build software.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Library</h3>
+                    <p>A collection of reusable code that developers can use in projects.</p>
+                </div>
+
+
+                <!-- ===== GIT / DEVELOPMENT ===== -->
+
+                <div class="term-card">
+                    <h3>Git</h3>
+                    <p>A version control system used to track changes in files and code.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>GitHub</h3>
+                    <p>An online platform used to store and collaborate on Git repositories.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Repository</h3>
+                    <p>A location where project files and their version history are stored.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Commit</h3>
+                    <p>A saved set of changes in a Git repository.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Branch</h3>
+                    <p>A separate development version of a project.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Merge</h3>
+                    <p>Combining changes from different branches into one branch.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Pull Request</h3>
+                    <p>A request to review and merge changes into another branch.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>README</h3>
+                    <p>A file that explains important information about a project.</p>
+                </div>
+
+
+                <!-- ===== CLOUD / OTHER ===== -->
+
+                <div class="term-card">
+                    <h3>Cloud Computing</h3>
+                    <p>Using remote internet-based servers to store data or run services.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Hosting</h3>
+                    <p>A service that stores website files so people can access the site online.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Deployment</h3>
+                    <p>The process of making a website or application available to users.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Localhost</h3>
+                    <p>A local environment used to run and test websites or applications.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Node.js</h3>
+                    <p>A runtime that allows JavaScript to run outside of a web browser.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>CMS</h3>
+                    <p>A system used to create and manage digital website content.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>UI</h3>
+                    <p>User Interface; the visual parts of a system that users interact with.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>UX</h3>
+                    <p>User Experience; how users interact with a product or system.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Cookie</h3>
+                    <p>Small pieces of data stored by a website in a user's browser.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Cache</h3>
+                    <p>Stored data that helps websites and applications load faster.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Open Source</h3>
+                    <p>Software whose source code is available to inspect or modify.</p>
+                </div>
+
+                <div class="term-card">
+                    <h3>Package</h3>
+                    <p>A collection of software files or code distributed for use in a project.</p>
                 </div>
 
             </div>
+
+            <button class="view-more-btn" id="termsButton">
+                View More
+            </button>
+
         </section>
+
+
+        <!-- ================= CODE BASICS ================= -->
 
         <section id="code">
+
             <h2>Code Basics</h2>
 
-            <p>
-                LingoPlus can also help beginners understand simple
-                programming code. Below are some basic examples.
+            <p class="section-description">
+                Simple examples of HTML, CSS, JavaScript, Python, SQL,
+                and common programming concepts.
             </p>
 
-            <div class="card">
-                <h3>HTML Example</h3>
-
-                <pre>
-&lt;h1&gt;Hello World&lt;/h1&gt;
-                </pre>
-
-                <p>
-                    This HTML code creates a large heading that displays
-                    "Hello World" on a webpage.
-                </p>
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="codeSearch"
+                    placeholder="Search code examples..."
+                >
             </div>
 
-            <div class="card">
-                <h3>CSS Example</h3>
+            <div class="code-grid">
 
-                <pre>
-h1 {
-    font-size: 30px;
-}
-                </pre>
 
-                <p>
-                    This CSS code changes the size of an h1 heading.
-                </p>
+                <!-- ===== HTML ===== -->
+
+                <div class="code-card">
+                    <h3>HTML Heading</h3>
+                    <pre>&lt;h1&gt;Hello World&lt;/h1&gt;</pre>
+                    <p>Creates a large heading.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>HTML Paragraph</h3>
+                    <pre>&lt;p&gt;Hello World&lt;/p&gt;</pre>
+                    <p>Creates a paragraph.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>HTML Link</h3>
+                    <pre>&lt;a href="page.html"&gt;Open&lt;/a&gt;</pre>
+                    <p>Creates a clickable link.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>HTML Image</h3>
+                    <pre>&lt;img src="image.jpg"&gt;</pre>
+                    <p>Displays an image.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>HTML Button</h3>
+                    <pre>&lt;button&gt;Click Me&lt;/button&gt;</pre>
+                    <p>Creates a button.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>HTML List</h3>
+                    <pre>&lt;ul&gt;
+  &lt;li&gt;Apple&lt;/li&gt;
+  &lt;li&gt;Banana&lt;/li&gt;
+&lt;/ul&gt;</pre>
+                    <p>Creates an unordered list.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>HTML Form</h3>
+                    <pre>&lt;form&gt;
+  &lt;input type="text"&gt;
+&lt;/form&gt;</pre>
+                    <p>Creates a basic form.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>HTML Input</h3>
+                    <pre>&lt;input type="text"&gt;</pre>
+                    <p>Creates a text input field.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>HTML Table</h3>
+                    <pre>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Name&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</pre>
+                    <p>Creates a simple table.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>HTML Comment</h3>
+                    <pre>&lt;!-- This is a comment --&gt;</pre>
+                    <p>Adds a comment that is not displayed.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>HTML Division</h3>
+                    <pre>&lt;div&gt;
+    Content
+&lt;/div&gt;</pre>
+                    <p>Creates a general container.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>HTML Class</h3>
+                    <pre>&lt;p class="text"&gt;
+    Hello
+&lt;/p&gt;</pre>
+                    <p>Assigns a class to an element.</p>
+                </div>
+
+
+                <!-- ===== CSS ===== -->
+
+                <div class="code-card">
+                    <h3>CSS Color</h3>
+                    <pre>color: red;</pre>
+                    <p>Changes text color.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>CSS Font Size</h3>
+                    <pre>font-size: 20px;</pre>
+                    <p>Changes text size.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>CSS Background</h3>
+                    <pre>background: black;</pre>
+                    <p>Changes the background color.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>CSS Class</h3>
+                    <pre>.card {
+    padding: 20px;
+}</pre>
+                    <p>Styles elements using a class.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>CSS Border</h3>
+                    <pre>border: 1px solid black;</pre>
+                    <p>Adds a border around an element.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>CSS Margin</h3>
+                    <pre>margin: 20px;</pre>
+                    <p>Adds space outside an element.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>CSS Padding</h3>
+                    <pre>padding: 20px;</pre>
+                    <p>Adds space inside an element.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>CSS Width</h3>
+                    <pre>width: 100%;</pre>
+                    <p>Sets the width of an element.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>CSS Height</h3>
+                    <pre>height: 100px;</pre>
+                    <p>Sets the height of an element.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>CSS Flexbox</h3>
+                    <pre>display: flex;
+justify-content: center;</pre>
+                    <p>Uses Flexbox to arrange elements.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>CSS Grid</h3>
+                    <pre>display: grid;
+grid-template-columns:
+1fr 1fr;</pre>
+                    <p>Creates a grid layout.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>CSS Hover</h3>
+                    <pre>button:hover {
+    background: black;
+}</pre>
+                    <p>Changes styling when the mouse moves over an element.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>CSS Border Radius</h3>
+                    <pre>border-radius: 10px;</pre>
+                    <p>Rounds the corners of an element.</p>
+                </div>
+
+
+                <!-- ===== JAVASCRIPT ===== -->
+
+                <div class="code-card">
+                    <h3>JavaScript Variable</h3>
+                    <pre>let name = "John";</pre>
+                    <p>Stores a value in a variable.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>JavaScript Constant</h3>
+                    <pre>const age = 20;</pre>
+                    <p>Creates a constant variable.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>JavaScript Alert</h3>
+                    <pre>alert("Hello!");</pre>
+                    <p>Displays a popup message.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>JavaScript Function</h3>
+                    <pre>function hello() {
+    alert("Hello!");
+}</pre>
+                    <p>Creates a reusable function.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>If Statement</h3>
+                    <pre>if (age &gt;= 18) {
+    console.log("Adult");
+}</pre>
+                    <p>Runs code when a condition is true.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>If Else</h3>
+                    <pre>if (age &gt;= 18) {
+    console.log("Adult");
+} else {
+    console.log("Minor");
+}</pre>
+                    <p>Chooses between two conditions.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>For Loop</h3>
+                    <pre>for (let i = 0; i &lt; 5; i++) {
+    console.log(i);
+}</pre>
+                    <p>Repeats code a specific number of times.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>While Loop</h3>
+                    <pre>while (x &lt; 5) {
+    x++;
+}</pre>
+                    <p>Repeats code while a condition is true.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>Array</h3>
+                    <pre>let fruits = [
+    "Apple",
+    "Banana",
+    "Mango"
+];</pre>
+                    <p>Stores multiple values.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>Array Access</h3>
+                    <pre>console.log(fruits[0]);</pre>
+                    <p>Accesses an item in an array.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>Array Push</h3>
+                    <pre>fruits.push("Orange");</pre>
+                    <p>Adds an item to an array.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>Object</h3>
+                    <pre>let student = {
+    name: "Alex",
+    age: 19
+};</pre>
+                    <p>Stores related information.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>DOM Selection</h3>
+                    <pre>document.getElementById(
+    "title"
+);</pre>
+                    <p>Finds an HTML element using its ID.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>Change Text</h3>
+                    <pre>document.getElementById(
+    "title"
+).textContent = "Hello";</pre>
+                    <p>Changes the text of an HTML element.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>Click Event</h3>
+                    <pre>button.addEventListener(
+    "click",
+    function() {
+        alert("Clicked!");
+    }
+);</pre>
+                    <p>Runs code when a button is clicked.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>Console Log</h3>
+                    <pre>console.log("Hello");</pre>
+                    <p>Displays information in the browser console.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>String</h3>
+                    <pre>let message = "Hello World";</pre>
+                    <p>Stores text.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>Number</h3>
+                    <pre>let score = 100;</pre>
+                    <p>Stores a number.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>Comparison</h3>
+                    <pre>age === 18</pre>
+                    <p>Checks whether two values are strictly equal.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>Logical AND</h3>
+                    <pre>age &gt; 18 &amp;&amp; score &gt; 50</pre>
+                    <p>Checks if both conditions are true.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>Logical OR</h3>
+                    <pre>age &gt; 18 || score &gt; 50</pre>
+                    <p>Checks if at least one condition is true.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>Template String</h3>
+                    <pre>let name = "Alex";
+console.log(`Hello ${name}`);</pre>
+                    <p>Combines variables with text.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>Return Value</h3>
+                    <pre>function add(a, b) {
+    return a + b;
+}</pre>
+                    <p>Returns a value from a function.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>Set Attribute</h3>
+                    <pre>element.setAttribute(
+    "title",
+    "Example"
+);</pre>
+                    <p>Changes or adds an HTML attribute.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>Create Element</h3>
+                    <pre>let p =
+document.createElement("p");</pre>
+                    <p>Creates a new HTML element using JavaScript.</p>
+                </div>
+
+
+                <!-- ===== PYTHON ===== -->
+
+                <div class="code-card">
+                    <h3>Python Print</h3>
+                    <pre>print("Hello World")</pre>
+                    <p>Displays text in Python.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>Python Variable</h3>
+                    <pre>name = "Alex"</pre>
+                    <p>Creates a variable in Python.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>Python If</h3>
+                    <pre>if age &gt;= 18:
+    print("Adult")</pre>
+                    <p>Runs code when a condition is true.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>Python Loop</h3>
+                    <pre>for i in range(5):
+    print(i)</pre>
+                    <p>Repeats code in Python.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>Python Function</h3>
+                    <pre>def hello():
+    print("Hello")</pre>
+                    <p>Creates a function in Python.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>Python List</h3>
+                    <pre>fruits = [
+    "Apple",
+    "Banana"
+]</pre>
+                    <p>Stores multiple values in a Python list.</p>
+                </div>
+
+
+                <!-- ===== SQL ===== -->
+
+                <div class="code-card">
+                    <h3>SQL Select</h3>
+                    <pre>SELECT * FROM students;</pre>
+                    <p>Retrieves data from a database table.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>SQL Insert</h3>
+                    <pre>INSERT INTO students
+VALUES (1, 'Alex');</pre>
+                    <p>Adds data to a database table.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>SQL Update</h3>
+                    <pre>UPDATE students
+SET name = 'John'
+WHERE id = 1;</pre>
+                    <p>Changes existing database data.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>SQL Delete</h3>
+                    <pre>DELETE FROM students
+WHERE id = 1;</pre>
+                    <p>Removes data from a database table.</p>
+                </div>
+
+
+                <!-- ===== JSON / WEB ===== -->
+
+                <div class="code-card">
+                    <h3>JSON Object</h3>
+                    <pre>{
+    "name": "Alex",
+    "age": 19
+}</pre>
+                    <p>Represents structured data using JSON.</p>
+                </div>
+
+                <div class="code-card">
+                    <h3>Fetch API</h3>
+                    <pre>fetch("data.json")
+    .then(response =&gt;
+        response.json()
+    )
+    .then(data =&gt;
+        console.log(data)
+    );</pre>
+                    <p>Requests data from a resource using JavaScript.</p>
+                </div>
+
             </div>
 
-            <div class="card">
-                <h3>JavaScript Example</h3>
-
-                <pre>
-alert("Hello World");
-                </pre>
-
-                <p>
-                    This JavaScript code displays a message box
-                    containing "Hello World".
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Python Example</h3>
-
-                <pre>
-print("Hello World")
-                </pre>
-
-                <p>
-                    This Python code prints "Hello World" to the
-                    program's output.
-                </p>
-            </div>
+            <button class="view-more-btn" id="codeButton">
+                View More
+            </button>
 
         </section>
 
-        <section id="contact">
+
+        <!-- ================= CONTACT ================= -->
+
+        <section id="contact" class="contact">
+
             <h2>Contact</h2>
 
             <p>
-                Have a term that you don't understand?
-                LingoPlus is designed to make learning IT concepts easier.
+                Have a question or suggestion about LingoPlus?
             </p>
 
-            <p>Email: lingoplus@gmail.com</p>
+            <p>
+                Contact the LingoPlus team through the group's professional
+                contact channel.
+            </p>
+
         </section>
 
     </main>
 
+
+    <!-- ================= FOOTER ================= -->
+
     <footer>
-        <p>© 2026 LingoPlus</p>
+        <p>
+            © 2026 LingoPlus. Made for IT beginners.
+        </p>
     </footer>
+
+
+    <!-- ================= SETTINGS MODAL ================= -->
+
+    <div class="modal" id="settingsModal">
+
+        <div class="modal-box">
+
+            <button class="close" onclick="closeSettings()">
+                &times;
+            </button>
+
+            <div class="popup-title">
+
+                <div class="popup-icon">
+                    🎛️
+                </div>
+
+                <div>
+                    <h2>Settings</h2>
+                    <p>Customize your LingoPlus experience.</p>
+                </div>
+
+            </div>
+
+            <div class="settings-line"></div>
+
+            <div class="setting-item">
+
+                <div>
+                    <strong>Dark Mode</strong>
+
+                    <small>
+                        Change the website appearance.
+                    </small>
+                </div>
+
+                <label class="switch">
+
+                    <input type="checkbox" id="darkMode">
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= LOGIN MODAL ================= -->
+
+    <div class="modal" id="loginModal">
+
+        <div class="modal-box">
+
+            <button class="close" onclick="closeLogin()">
+                &times;
+            </button>
+
+            <div class="popup-title">
+
+                <div class="popup-icon">
+                    🔐
+                </div>
+
+                <div>
+                    <h2>Login</h2>
+                    <p>Demo login for LingoPlus.</p>
+                </div>
+
+            </div>
+
+            <div class="settings-line"></div>
+
+            <form id="loginForm">
+
+                <label for="username">
+                    Username
+                </label>
+
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Enter username"
+                    required
+                >
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter password"
+                    required
+                >
+
+                <button
+                    type="submit"
+                    class="popup-button"
+                >
+                    Login
+                </button>
+
+                <p id="loginMessage"></p>
+
+                <div class="demo-note">
+                    This is a demonstration login and does not
+                    connect to a real account system.
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
