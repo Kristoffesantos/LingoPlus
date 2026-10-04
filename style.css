@@ -1,3 +1,5 @@
+/* ================= GENERAL ================= */
+
 * {
     box-sizing: border-box;
 }
@@ -9,184 +11,707 @@ html {
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f5f5f5;
-    color: #222;
+    background: #f4f4f4;
+    color: #111;
+    line-height: 1.4;
 }
+
+
+/* ================= HEADER ================= */
 
 header {
-    padding: 20px;
-    text-align: center;
-    background-color: white;
-    border-bottom: 1px solid #ddd;
+    background: #000;
+    color: white;
+    padding: 12px 25px;
 }
 
-header h1 {
-    margin-bottom: 5px;
+.logo {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: auto;
 }
 
 nav {
-    margin-top: 10px;
+    display: flex;
+    gap: 18px;
 }
 
 nav a {
-    margin: 0 10px;
-    color: #222;
+    color: #ccc;
     text-decoration: none;
+    font-size: 13px;
 }
 
 nav a:hover {
-    color: #555;
-    text-decoration: underline;
+    color: white;
 }
 
-main {
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
+.header-buttons {
+    display: flex;
+    gap: 6px;
 }
 
-section {
-    padding: 40px 20px;
+.header-buttons button {
+    padding: 6px 11px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
 }
+
+.header-buttons button:hover {
+    background: white;
+    color: black;
+}
+
+
+/* ================= HERO ================= */
 
 .hero {
     text-align: center;
-    padding: 70px 20px;
+    padding: 30px 15px;
+    background: white;
+    border-bottom: 1px solid #ddd;
 }
 
-.hero h2 {
+.hero h1 {
+    margin: 0 0 6px;
     font-size: 36px;
-    margin-bottom: 15px;
+    color: #000;
 }
 
 .hero p {
-    max-width: 700px;
-    margin: 10px auto;
-    color: #555;
+    max-width: 800px;
+    margin: 3px auto;
+    color: #666;
+    font-size: 14px;
 }
 
-button {
-    padding: 11px 22px;
-    background-color: white;
-    border: 1px solid #999;
-    border-radius: 6px;
-    cursor: pointer;
+.hero-buttons {
+    margin-top: 12px;
 }
 
-button:hover {
-    background-color: #eee;
+.hero-buttons a {
+    display: inline-block;
+    margin: 2px;
+    padding: 7px 15px;
+    background: #000;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 13px;
 }
 
-.hero button {
-    margin-top: 20px;
+.hero-buttons a:hover {
+    background: white;
+    color: black;
 }
 
-/* Search */
 
-#searchInput {
+/* ================= SECTIONS ================= */
+
+section {
+    max-width: 1400px;
+    margin: auto;
+    padding: 25px 20px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 25px;
+    color: #000;
+    margin: 0 0 10px;
+}
+
+section h3 {
+    color: #000;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about-text {
+    max-width: 950px;
+    margin: auto;
+    text-align: center;
+    color: #666;
+}
+
+.about-text p {
+    margin: 4px 0;
+}
+
+.about-text h3 {
+    margin: 12px 0 4px;
+}
+
+.about-text ul {
+    display: inline-block;
+    text-align: left;
+    margin: 3px 0;
+}
+
+
+/* ================= DESCRIPTION ================= */
+
+.section-description {
+    text-align: center;
+    color: #666;
+    margin: 0 0 12px;
+    font-size: 13px;
+}
+
+
+/* ================= SEARCH ================= */
+
+.search-box {
+    max-width: 750px;
+    margin: 0 auto 12px;
+}
+
+.search-box input {
     width: 100%;
-    max-width: 600px;
-    padding: 12px;
-    margin: 15px 0 10px;
+    padding: 9px 12px;
     border: 1px solid #aaa;
-    border-radius: 6px;
+    border-radius: 4px;
+    background: white;
+    color: #111;
+    font-size: 13px;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: #000;
+}
+
+
+/* ================= IT TERMS ================= */
+
+.term-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.term-card {
+    background: white;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.term-card:hover {
+    border-color: #888;
+}
+
+.term-card h3 {
+    margin: 0 0 4px;
+    color: #000;
     font-size: 16px;
 }
 
-#searchInput:focus {
-    outline: none;
-    border-color: #555;
-}
-
-#clearButton {
-    margin-left: 5px;
-}
-
-#searchResult {
+.term-card p {
+    margin: 0;
     color: #666;
-    margin: 5px 0 20px;
+    font-size: 12px;
 }
 
-/* IT Term Cards */
 
-.cards {
+/* ================= CODE BASICS ================= */
+
+.code-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 8px;
 }
 
-.card {
-    padding: 20px;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    transition: 0.2s;
-}
-
-.card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.card h3 {
-    margin-top: 0;
-}
-
-.card p {
-    color: #555;
-}
-
-/* Code Examples */
-
-pre {
-    padding: 15px;
-    background-color: #f0f0f0;
+.code-card {
+    background: white;
+    padding: 12px;
     border: 1px solid #ddd;
-    border-radius: 6px;
+    border-radius: 4px;
+}
+
+.code-card h3 {
+    margin: 0 0 6px;
+    color: #000;
+    font-size: 16px;
+}
+
+.code-card p {
+    margin: 5px 0 0;
+    color: #666;
+    font-size: 12px;
+}
+
+.code-card pre {
+    margin: 0;
+    background: #111;
+    color: #eee;
+    padding: 9px;
+    border-radius: 3px;
     overflow-x: auto;
+    font-size: 11px;
 }
 
-/* Sections */
 
-#about,
-#terms,
-#code,
-#contact {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin-bottom: 30px;
+/* ================= VIEW MORE ================= */
+
+.view-more-btn {
+    display: block;
+    margin: 12px auto 0;
+    padding: 7px 18px;
+    background: #000;
+    color: white;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
 }
 
-/* Footer */
+.view-more-btn:hover {
+    background: white;
+    color: black;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    color: #666;
+    margin: 3px 0;
+}
+
+
+/* ================= FOOTER ================= */
 
 footer {
     text-align: center;
-    padding: 25px;
-    background-color: white;
-    border-top: 1px solid #ddd;
+    padding: 12px;
+    background: #000;
+    color: #aaa;
 }
 
-/* Mobile */
+footer p {
+    margin: 0;
+    font-size: 11px;
+}
 
-@media (max-width: 700px) {
 
-    .cards {
-        grid-template-columns: 1fr;
+/* ================= POPUPS ================= */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.modal-box {
+    position: relative;
+    width: 100%;
+    max-width: 430px;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.modal-box h2 {
+    margin: 0;
+    color: #000;
+    font-size: 21px;
+}
+
+.modal-box p {
+    margin: 3px 0 0;
+    color: #666;
+}
+
+
+/* ================= POPUP TITLE ================= */
+
+.popup-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.popup-icon {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    color: white;
+    border-radius: 4px;
+}
+
+.settings-line {
+    height: 1px;
+    background: #ddd;
+    margin: 12px 0;
+}
+
+
+/* ================= CLOSE ================= */
+
+.close {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: transparent;
+    font-size: 22px;
+    color: #777;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+
+/* ================= SETTINGS ================= */
+
+.setting-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 9px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.setting-item strong {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.setting-item small {
+    display: block;
+    color: #777;
+}
+
+
+/* ================= SWITCH ================= */
+
+.switch {
+    position: relative;
+    width: 40px;
+    height: 21px;
+    flex-shrink: 0;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #bbb;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 3px;
+    bottom: 3px;
+    background: white;
+    border-radius: 50%;
+    transition: 0.2s ease;
+}
+
+.switch input:checked + .slider {
+    background: #000;
+}
+
+.switch input:checked + .slider:before {
+    transform: translateX(19px);
+}
+
+
+/* ================= POPUP BUTTON ================= */
+
+.popup-button {
+    width: 100%;
+    margin-top: 12px;
+    padding: 8px;
+    background: #000;
+    color: white;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.popup-button:hover {
+    background: white;
+    color: black;
+}
+
+
+/* ================= LOGIN ================= */
+
+#loginForm label {
+    display: block;
+    margin-top: 9px;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+#loginForm input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+#loginForm input:focus {
+    outline: none;
+    border-color: #000;
+}
+
+#loginMessage {
+    text-align: center;
+    margin-top: 7px;
+}
+
+.demo-note {
+    margin-top: 10px;
+    padding: 6px;
+    background: #f2f2f2;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 10px;
+    color: #666;
+}
+
+
+/* ================= DARK MODE ================= */
+
+body.dark {
+    background: #0a0a0a;
+    color: #eee;
+}
+
+body.dark header {
+    background: #000;
+}
+
+body.dark .hero {
+    background: #111;
+    border-color: #222;
+}
+
+body.dark .hero h1,
+body.dark section h2,
+body.dark section h3 {
+    color: white;
+}
+
+body.dark .hero p,
+body.dark .about-text,
+body.dark .section-description {
+    color: #aaa;
+}
+
+body.dark .term-card,
+body.dark .code-card {
+    background: #111;
+    border-color: #2d2d2d;
+}
+
+body.dark .term-card h3,
+body.dark .code-card h3 {
+    color: white;
+}
+
+body.dark .term-card p,
+body.dark .code-card p {
+    color: #aaa;
+}
+
+body.dark .code-card pre {
+    background: #050505;
+    border-color: #333;
+}
+
+body.dark .contact p {
+    color: #aaa;
+}
+
+body.dark footer {
+    background: #000;
+}
+
+
+/* ================= DARK POPUPS ================= */
+
+body.dark .modal-box {
+    background: #111;
+    color: white;
+    border-color: #333;
+}
+
+body.dark .modal-box h2 {
+    color: white;
+}
+
+body.dark .modal-box p,
+body.dark .setting-item small {
+    color: #aaa;
+}
+
+body.dark .settings-line,
+body.dark .setting-item {
+    border-color: #333;
+}
+
+body.dark #loginForm input {
+    background: #111;
+    color: white;
+    border-color: #444;
+}
+
+body.dark .demo-note {
+    background: #1a1a1a;
+    color: #aaa;
+}
+
+body.dark .popup-icon {
+    background: white;
+    color: black;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    .term-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .code-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header-row {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 12px 10px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    nav {
+        gap: 9px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     nav a {
-        display: block;
-        margin: 8px 0;
+        font-size: 11px;
     }
 
-    .hero h2 {
+    .hero {
+        padding: 25px 12px;
+    }
+
+    .hero h1 {
         font-size: 30px;
     }
 
-    #clearButton {
-        margin-left: 0;
-        margin-bottom: 10px;
+    section {
+        padding: 22px 10px;
     }
+
+    section h2 {
+        font-size: 23px;
+    }
+
+    .term-grid,
+    .code-grid {
+        grid-template-columns: 1fr;
+        gap: 7px;
+    }
+
+    .term-card,
+    .code-card {
+        padding: 11px;
+    }
+
+    .modal-box {
+        padding: 18px;
+    }
+
+}
+
+/* ================= SEARCH NO RESULTS ================= */
+
+.no-results {
+    text-align: center;
+    margin: 10px 0 15px;
+    padding: 12px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #666;
+    font-size: 13px;
+}
+
+body.dark .no-results {
+    background: #111;
+    border-color: #333;
+    color: #aaa;
 }
